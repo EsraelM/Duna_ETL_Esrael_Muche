@@ -2,18 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Esrael_Muche_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-04T00:21:50.74175Z</LastWriteTime>
+    <LastWriteTime>2020-09-10T03:52:51.0652761Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Pkg_Esrael_Muche_LendingQB.dtsx</Name>
-      <LastWriteTime>2020-09-05T23:12:32.0714175Z</LastWriteTime>
+      <LastWriteTime>2020-09-11T02:03:32.8599904Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Package.dtsx</Name>
       <LastWriteTime>2020-08-28T00:36:45.1065166Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Pkg_Esrael_Muche_QuickenLoan.dtsx</Name>
+      <LastWriteTime>2020-09-11T03:01:33.7042922Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
