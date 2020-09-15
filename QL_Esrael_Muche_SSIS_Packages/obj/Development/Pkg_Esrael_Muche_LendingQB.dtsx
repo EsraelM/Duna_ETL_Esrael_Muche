@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Esrael_Muche_LendingQB"
   DTS:PackageType="5"
-  DTS:VersionBuild="144"
-  DTS:VersionGUID="{9338A76C-133E-4AB0-8410-A92D3A10B9CB}">
+  DTS:VersionBuild="154"
+  DTS:VersionGUID="{41E330EC-BD21-4374-8404-7EF6511C06C9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:LogProviders>
@@ -37,7 +37,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/10/2020 10:03:41 PM</DTS:VariableValue>
+        DTS:DataType="7">9/14/2020 6:18:40 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -121,7 +121,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/10/2020 10:03:41 PM</DTS:VariableValue>
+        DTS:DataType="7">9/14/2020 6:18:40 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -495,13 +495,13 @@
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">(DT_WSTR,50)#{Package\Data Flow Task_SharePoint_OData\OData Source.Outputs[Output].Columns[BorrFirstName]} != (DT_WSTR,50)"Test" || (DT_WSTR,50)#{Package\Data Flow Task_SharePoint_OData\OData Source.Outputs[Output].Columns[BorrLastName]} != (DT_WSTR,50)"Test"</property>
+                      name="Expression">(DT_WSTR,50)#{Package\Data Flow Task_SharePoint_OData\OData Source.Outputs[Output].Columns[BorrFirstName]} != "Test" || (DT_WSTR,50)#{Package\Data Flow Task_SharePoint_OData\OData Source.Outputs[Output].Columns[BorrLastName]} != "Test"</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">(DT_WSTR,50)BorrFirstName != (DT_WSTR,50)"Test" || (DT_WSTR,50)BorrLastName != (DT_WSTR,50)"Test"</property>
+                      name="FriendlyExpression">(DT_WSTR,50)BorrFirstName != "Test" || (DT_WSTR,50)BorrLastName != "Test"</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -6428,12 +6428,12 @@
                   name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\Derived Column_ReplaceNullWith_Dunatek.Inputs[Derived Column Input].Columns[Insurance_Company]"
+                      refId="Package\Data Flow Task_SharePoint_OData\Derived Column_ReplaceNullWith_Dunatek.Inputs[Derived Column Input].Columns[Copy of Copy of MortgageInsuranceCompany]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
-                      cachedName="Insurance_Company"
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]" />
+                      cachedName="Copy of Copy of MortgageInsuranceCompany"
+                      lineageId="Package\Data Flow Task_SharePoint_OData\Data Conversion_DT-WSTR_TO_DT-STR.Outputs[Data Conversion Output].Columns[Copy of Copy of MortgageInsuranceCompany]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -6461,13 +6461,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)([ISNULL](#{Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]}) ? "Dunatek" : #{Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]})</property>
+                          name="Expression">(DT_STR,128,1252)([ISNULL](#{Package\Data Flow Task_SharePoint_OData\Data Conversion_DT-WSTR_TO_DT-STR.Outputs[Data Conversion Output].Columns[Copy of Copy of MortgageInsuranceCompany]}) ? "Dunatek" : #{Package\Data Flow Task_SharePoint_OData\Data Conversion_DT-WSTR_TO_DT-STR.Outputs[Data Conversion Output].Columns[Copy of Copy of MortgageInsuranceCompany]})</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_STR,128,1252)(ISNULL(Insurance_Company) ? "Dunatek" : Insurance_Company)</property>
+                          name="FriendlyExpression">(DT_STR,128,1252)(ISNULL([Copy of Copy of MortgageInsuranceCompany]) ? "Dunatek" : [Copy of Copy of MortgageInsuranceCompany])</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -13998,10 +13998,10 @@
                       lineageId="Package\Data Flow Task_SharePoint_OData\Data Conversion_DT-WSTR_TO_DT-STR.Outputs[Data Conversion Output].Columns[Copy of Copy of MortgageInsuranceCompany]">
                       <properties>
                         <property
-                          dataType="System.String"
+                          dataType="System.Null"
                           description="Name of the reference table column with which the input column should be matched."
                           name="JoinToReferenceColumn"
-                          state="escaped">MortgageInsuranceCompany</property>
+                          state="escaped" />
                         <property
                           dataType="System.Int32"
                           description="Specifies whether the match is a fuzzy or an exact match."
@@ -15216,7 +15216,7 @@
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy.Inputs[Fuzzy Lookup Input].Columns[LoanOfficerFirstName]"
                       cachedDataType="wstr"
-                      cachedLength="101"
+                      cachedLength="100"
                       cachedName="LoanOfficerFirstName"
                       lineageId="Package\Data Flow Task_SharePoint_OData\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerFirstName]">
                       <properties>
@@ -15249,7 +15249,7 @@
                     <inputColumn
                       refId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy.Inputs[Fuzzy Lookup Input].Columns[LoanOfficerLastName]"
                       cachedDataType="wstr"
-                      cachedLength="101"
+                      cachedLength="100"
                       cachedName="LoanOfficerLastName"
                       lineageId="Package\Data Flow Task_SharePoint_OData\Derived Column.Outputs[Derived Column Output].Columns[LoanOfficerLastName]">
                       <properties>
@@ -15676,6 +15676,40 @@
                           description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
                           name="FuzzyComparisonFlags"
                           typeConverter="tcComparisonFlags">1</property>
+                        <property
+                          dataType="System.UInt32"
+                          description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
+                          name="FuzzyComparisonFlagsEx"
+                          typeConverter="tcComparisonFlagsEx">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy.Inputs[Fuzzy Lookup Input].Columns[DC_Insurance_Company]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_Insurance_Company"
+                      lineageId="Package\Data Flow Task_SharePoint_OData\Derived Column_ReplaceNullWith_Dunatek.Outputs[Derived Column Output].Columns[DC_Insurance_Company]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Name of the reference table column with which the input column should be matched."
+                          name="JoinToReferenceColumn"
+                          state="escaped">MortgageInsuranceCompany</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies whether the match is a fuzzy or an exact match."
+                          name="JoinType"
+                          typeConverter="tcJoinType">2</property>
+                        <property
+                          dataType="System.Single"
+                          description="Specifies the minimum textual similarity required between input and fuzzy matched records on values in this particular join column.  Must be a floating point value between 0.0 and 1.0."
+                          name="MinSimilarity">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
+                          name="FuzzyComparisonFlags"
+                          typeConverter="tcComparisonFlags">0</property>
                         <property
                           dataType="System.UInt32"
                           description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
@@ -22275,6 +22309,29 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
+                      refId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy.Outputs[Fuzzy Lookup Output].Columns[_Similarity_DC_Insurance_Company]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy.Outputs[Fuzzy Lookup Output].Columns[_Similarity_DC_Insurance_Company]"
+                      name="_Similarity_DC_Insurance_Company">
+                      <properties>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the reference table column that is copied to the output for each match result."
+                          name="CopyFromReferenceColumn"
+                          state="escaped" />
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task_SharePoint_OData\Derived Column_ReplaceNullWith_Dunatek.Outputs[Derived Column Output].Columns[DC_Insurance_Company]}</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies whether the column is used to indicate confidence or similarity."
+                          name="ColumnType"
+                          typeConverter="tcColumnType">3</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
                       refId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]"
                       codePage="1252"
                       dataType="str"
@@ -22348,30 +22405,6 @@
                           description="Specifies whether the column is used to indicate confidence or similarity."
                           name="ColumnType"
                           typeConverter="tcColumnType">2</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy.Outputs[Fuzzy Lookup Output].Columns[_Similarity_MortgageInsuranceCompany]"
-                      dataType="r4"
-                      description="Column-level similarity score for fuzzy join on column &quot;Copy of Copy of MortgageInsuranceCompany&quot;."
-                      lineageId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy.Outputs[Fuzzy Lookup Output].Columns[_Similarity_MortgageInsuranceCompany]"
-                      name="_Similarity_MortgageInsuranceCompany">
-                      <properties>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the reference table column that is copied to the output for each match result."
-                          name="CopyFromReferenceColumn"
-                          state="escaped" />
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task_SharePoint_OData\Data Conversion_DT-WSTR_TO_DT-STR.Outputs[Data Conversion Output].Columns[Copy of Copy of MortgageInsuranceCompany]}</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies whether the column is used to indicate confidence or similarity."
-                          name="ColumnType"
-                          typeConverter="tcColumnType">3</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -25850,17 +25883,17 @@ where [refTable].[MarketSourceCode] = ?</property>
               startId="Package\Data Flow Task_SharePoint_OData\Data Conversion_DT-WSTR_TO_DT-STR.Outputs[Data Conversion Output]" />
             <path
               refId="Package\Data Flow Task_SharePoint_OData.Paths[Derived Column Output]"
-              endId="Package\Data Flow Task_SharePoint_OData\Lookup_Market_Source_Name.Inputs[Lookup Input]"
+              endId="Package\Data Flow Task_SharePoint_OData\Derived Column_ReplaceNullWith_Dunatek.Inputs[Derived Column Input]"
               name="Derived Column Output"
               startId="Package\Data Flow Task_SharePoint_OData\Derived Column.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Task_SharePoint_OData.Paths[Derived Column Output1]"
-              endId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination_StgTable.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task_SharePoint_OData\Lookup_Market_Source_Name.Inputs[Lookup Input]"
               name="Derived Column Output"
               startId="Package\Data Flow Task_SharePoint_OData\Derived Column_ReplaceNullWith_Dunatek.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Task_SharePoint_OData.Paths[Fuzzy Lookup Output]"
-              endId="Package\Data Flow Task_SharePoint_OData\Derived Column_ReplaceNullWith_Dunatek.Inputs[Derived Column Input]"
+              endId="Package\Data Flow Task_SharePoint_OData\OLE DB Destination_StgTable.Inputs[OLE DB Destination Input]"
               name="Fuzzy Lookup Output"
               startId="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy.Outputs[Fuzzy Lookup Output]" />
             <path
@@ -26906,7 +26939,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package.EventHandlers[OnError]">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="164,42.6666666666667"
           Id="Package.EventHandlers[OnError]\Execute SQL Task"
@@ -26946,9 +26979,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -27037,19 +27068,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="218.666666666667,42.6666666666667"
           Id="Package\Data Flow Task_SharePoint_OData\OLE DB Destination_StgTable"
-          TopLeft="920.583326396311,532.369038389906" />
+          TopLeft="768.083328668738,586.535704087997" />
         <NodeLayout
           Size="281.333333333334,42.6666666666667"
           Id="Package\Data Flow Task_SharePoint_OData\Derived Column_ReplaceNullWith_Dunatek"
-          TopLeft="564.999998137355,529.154761901995" />
+          TopLeft="154.583337586373,439.671430168748" />
         <NodeLayout
           Size="222.666666666667,42.6666666666667"
           Id="Package\Data Flow Task_SharePoint_OData\Lookup_Market_Source_Name"
-          TopLeft="183.20634920635,435.793650793651" />
+          TopLeft="196.74801567123,524.62698253852" />
         <NodeLayout
           Size="284,42.6666666666667"
           Id="Package\Data Flow Task_SharePoint_OData\Fuzzy Lookup_MortgageInsuranceComanpy"
-          TopLeft="217,530" />
+          TopLeft="406.79166383855,597.166665465633" />
         <NodeLayout
           Size="154.666666666667,42.6666666666667"
           Id="Package\Data Flow Task_SharePoint_OData\Derived Column"
@@ -27060,18 +27091,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           TopLeft="149.458331299946,279.466661955516" />
         <EdgeLayout
           Id="Package\Data Flow Task_SharePoint_OData.Paths[Derived Column Output1]"
-          TopLeft="846.333331470688,552.095233479284">
+          TopLeft="295.25000425304,482.338096835415">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="74.2499949256224,0"
+              EndConnector="12.8313447515237,42.2888857031055"
               Start="0,0"
-              End="66.7499949256224,0">
+              End="12.8313447515237,34.7888857031055">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="66.7499949256224,0" />
+                    End="0,17.1444428515527" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.1444428515527"
+                    Point2="0,21.1444428515527"
+                    Point3="4,21.1444428515527" />
+                  <mssgle:LineSegment
+                    End="8.83134475152366,21.1444428515527" />
+                  <mssgle:CubicBezierSegment
+                    Point1="8.83134475152366,21.1444428515527"
+                    Point2="12.8313447515237,21.1444428515527"
+                    Point3="12.8313447515237,25.1444428515527" />
+                  <mssgle:LineSegment
+                    End="12.8313447515237,34.7888857031055" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27086,26 +27129,26 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="15.956352428726,42.2603237521844"
+              EndConnector="16.6666741420825,46.1381031272816"
               Start="0,0"
-              End="15.956352428726,34.7603237521844">
+              End="16.6666741420825,38.6381031272816">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.1301618760922" />
+                    End="0,19.0690515636408" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.1301618760922"
-                    Point2="0,21.1301618760922"
-                    Point3="4,21.1301618760922" />
+                    Point1="0,19.0690515636408"
+                    Point2="0,23.0690515636408"
+                    Point3="4,23.0690515636408" />
                   <mssgle:LineSegment
-                    End="11.956352428726,21.1301618760922" />
+                    End="12.6666741420825,23.0690515636408" />
                   <mssgle:CubicBezierSegment
-                    Point1="11.956352428726,21.1301618760922"
-                    Point2="15.956352428726,21.1301618760922"
-                    Point3="15.956352428726,25.1301618760922" />
+                    Point1="12.6666741420825,23.0690515636408"
+                    Point2="16.6666741420825,23.0690515636408"
+                    Point3="16.6666741420825,27.0690515636408" />
                   <mssgle:LineSegment
-                    End="15.956352428726,34.7603237521844" />
+                    End="16.6666741420825,38.6381031272816" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -27230,60 +27273,74 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task_SharePoint_OData.Paths[Lookup Match Output]"
-          TopLeft="294.539682539683,478.460317460318">
+          TopLeft="308.081349004563,567.293649205187">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="64.4603174603167,51.5396825396823"
+              EndConnector="240.710314833987,29.8730162604462"
               Start="0,0"
-              End="64.4603174603167,44.0396825396823">
+              End="240.710314833987,22.3730162604462">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.7698412698412" />
+                    End="0,10.9365081302231" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.7698412698412"
-                    Point2="0,25.7698412698412"
-                    Point3="4,25.7698412698412" />
+                    Point1="0,10.9365081302231"
+                    Point2="0,14.9365081302231"
+                    Point3="4,14.9365081302231" />
                   <mssgle:LineSegment
-                    End="60.4603174603167,25.7698412698412" />
+                    End="236.710314833987,14.9365081302231" />
                   <mssgle:CubicBezierSegment
-                    Point1="60.4603174603167,25.7698412698412"
-                    Point2="64.4603174603167,25.7698412698412"
-                    Point3="64.4603174603167,29.7698412698412" />
+                    Point1="236.710314833987,14.9365081302231"
+                    Point2="240.710314833987,14.9365081302231"
+                    Point3="240.710314833987,18.9365081302231" />
                   <mssgle:LineSegment
-                    End="64.4603174603167,44.0396825396823" />
+                    End="240.710314833987,22.3730162604462" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-15.9612279885917,30.7698412698412,96.3827734375,11.609375"
+              BoundingBox="72.1637706982434,19.9365081302231,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task_SharePoint_OData.Paths[Fuzzy Lookup Output]"
-          TopLeft="501,550.910714284331">
+          TopLeft="690.79166383855,618.499998798966">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="63.999998137355,0"
+              EndConnector="77.291664830188,-10.6309613776359"
               Start="0,0"
-              End="56.499998137355,0">
+              End="69.791664830188,-10.6309613776359">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="56.499998137355,0" />
+                    End="34.645832415094,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.645832415094,0"
+                    Point2="38.645832415094,0"
+                    Point3="38.645832415094,-4" />
+                  <mssgle:LineSegment
+                    End="38.645832415094,-6.63096137763591" />
+                  <mssgle:CubicBezierSegment
+                    Point1="38.645832415094,-6.63096137763591"
+                    Point2="38.645832415094,-10.6309613776359"
+                    Point3="42.645832415094,-10.6309613776359" />
+                  <mssgle:LineSegment
+                    End="69.791664830188,-10.6309613776359" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="30.645832415094,1,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Esrael_Muche_QuickenLoan"
   DTS:PackageType="5"
-  DTS:VersionBuild="165"
-  DTS:VersionGUID="{8A5D6E63-E508-4081-9675-4128A8ED2412}">
+  DTS:VersionBuild="168"
+  DTS:VersionGUID="{79475CB0-FF4E-488C-B891-B39030A75BB6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:LogProviders>
@@ -37,7 +37,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/13/2020 7:59:05 PM</DTS:VariableValue>
+        DTS:DataType="7">9/14/2020 8:05:30 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -121,7 +121,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/13/2020 7:59:05 PM</DTS:VariableValue>
+        DTS:DataType="7">9/14/2020 8:05:30 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -15240,6 +15240,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:refId="Package\Execute SQL Task _RunLog"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{B68F95B9-A63F-4651-9536-ACD2EF680F44}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -15318,9 +15319,27 @@ where [refTable].[MarketSourceCode] = ?</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Execute SQL Task_Handling_Null_For Insurance_Company_ Column"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{37A42392-6FAC-40F5-902B-654284A6A514}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task_Handling_Null_For Insurance_Company_ Column"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{9DE4DC1B-45A2-4C06-9A59-BEF0908476F2}"
+          SQLTask:SqlStatementSource="if exists &#xA;(select 1 &#xA; From [dbo].[Stg_Esrael_Muche_QL]&#xA;--Where MortgageInsuranceCompany LIKE  '%RHS%'&#xA;Where Insurance_Company IS NULL &#xA; )&#xA; begin &#xA;Insert into [MortgageInsuranceCompanyCrossWalkReference] ( [MortgageInsuranceCompany], [Insurance_Company] )&#xA;&#xA;Select DISTINCT MortgageInsuranceCompany, &#xA; MortgageInsuranceCompany   as Insurance_Company&#xA;From [dbo].[Stg_Esrael_Muche_QL]&#xA;--Where MortgageInsuranceCompany LIKE  '%RHS%'&#xA;Where Insurance_Company IS NULL &#xA;end " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Execute SQL Task_Max_Modified_Date"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
       DTS:DTSID="{64CDD82A-5737-4CF1-B540-37154BFE4B47}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -15374,6 +15393,14 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
       DTS:To="Package\Execute SQL Task _RunLog" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{85992E4D-348E-4CE6-AB75-1262A9E0E81A}"
+      DTS:From="Package\Execute SQL Task _RunLog"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Execute SQL Task_Handling_Null_For Insurance_Company_ Column" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
@@ -16145,7 +16172,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="341.333333333334,42.6666666666667"
           Id="Package\Data Flow Task_MortgageInsuranceCompanyCrossWalk"
@@ -16165,33 +16192,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="262.666666666667,42"
           Id="Package\Execute SQL Task_Max_Modified_Date"
-          TopLeft="56.2499991618099,19.4999996513126" />
+          TopLeft="94.3749985937032,18.1999996745584" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="187.583332495143,61.4999996513126">
+          TopLeft="225.708331927037,60.1999996745584">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="86.0416610135381,51.0333298697076"
+              EndConnector="47.9166615816448,52.3333298464618"
               Start="0,0"
-              End="86.0416610135381,43.5333298697076">
+              End="47.9166615816448,44.8333298464618">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.5166649348538" />
+                    End="0,22.1666649232309" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.5166649348538"
-                    Point2="0,25.5166649348538"
-                    Point3="4,25.5166649348538" />
+                    Point1="0,22.1666649232309"
+                    Point2="0,26.1666649232309"
+                    Point3="4,26.1666649232309" />
                   <mssgle:LineSegment
-                    End="82.0416610135381,25.5166649348538" />
+                    End="43.9166615816448,26.1666649232309" />
                   <mssgle:CubicBezierSegment
-                    Point1="82.0416610135381,25.5166649348538"
-                    Point2="86.0416610135381,25.5166649348538"
-                    Point3="86.0416610135381,29.5166649348538" />
+                    Point1="43.9166615816448,26.1666649232309"
+                    Point2="47.9166615816448,26.1666649232309"
+                    Point3="47.9166615816448,30.1666649232309" />
                   <mssgle:LineSegment
-                    End="86.0416610135381,43.5333298697076" />
+                    End="47.9166615816448,44.8333298464618" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16260,6 +16287,44 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     Point3="28.0833288816109,26.7166660041611" />
                   <mssgle:LineSegment
                     End="28.0833288816109,37.9333320083222" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="400,42.6666666666667"
+          Id="Package\Execute SQL Task_Handling_Null_For Insurance_Company_ Column"
+          TopLeft="515.624992316589,264.549995269477" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="438.291658834244,300.399994235038">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="77.3333334823449,-14.5166656322278"
+              Start="0,0"
+              End="69.8333334823449,-14.5166656322278">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="34.6666667411724,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.6666667411724,0"
+                    Point2="38.6666667411724,0"
+                    Point3="38.6666667411724,-4" />
+                  <mssgle:LineSegment
+                    End="38.6666667411724,-10.5166656322278" />
+                  <mssgle:CubicBezierSegment
+                    Point1="38.6666667411724,-10.5166656322278"
+                    Point2="38.6666667411724,-14.5166656322278"
+                    Point3="42.6666667411724,-14.5166656322278" />
+                  <mssgle:LineSegment
+                    End="69.8333334823449,-14.5166656322278" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -16453,7 +16518,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-37.0976362880133,22.4374986197799,96.3827734375,11.609375"
+              BoundingBox="-37.0976362880134,22.4374986197799,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
