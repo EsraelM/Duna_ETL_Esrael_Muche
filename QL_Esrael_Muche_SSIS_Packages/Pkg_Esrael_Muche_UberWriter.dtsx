@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Esrael_Muche_UberWriter"
   DTS:PackageType="5"
-  DTS:VersionBuild="173"
-  DTS:VersionGUID="{10A672A4-67A8-4DE6-A099-26854C6246CF}">
+  DTS:VersionBuild="175"
+  DTS:VersionGUID="{14127824-5560-47E2-A557-BCE9D3377C2E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:LogProviders>
@@ -37,7 +37,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/16/2020 12:53:10 AM</DTS:VariableValue>
+        DTS:DataType="7">9/17/2020 12:14:17 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -121,7 +121,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/16/2020 12:53:10 AM</DTS:VariableValue>
+        DTS:DataType="7">9/17/2020 12:14:17 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""

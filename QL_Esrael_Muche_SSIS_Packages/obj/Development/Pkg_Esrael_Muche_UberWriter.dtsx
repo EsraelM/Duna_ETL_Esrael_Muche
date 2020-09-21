@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Esrael_Muche_UberWriter"
   DTS:PackageType="5"
-  DTS:VersionBuild="172"
-  DTS:VersionGUID="{90E29A3B-C6A5-4943-87D3-3E0CC96BE7C2}">
+  DTS:VersionBuild="175"
+  DTS:VersionGUID="{14127824-5560-47E2-A557-BCE9D3377C2E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:LogProviders>
@@ -37,7 +37,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varBody">
       <DTS:VariableValue
-        DTS:DataType="7">9/16/2020 12:12:25 AM</DTS:VariableValue>
+        DTS:DataType="7">9/17/2020 7:17:53 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -121,7 +121,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/16/2020 12:12:25 AM</DTS:VariableValue>
+        DTS:DataType="7">9/17/2020 7:17:53 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -16739,11 +16739,11 @@ where [refTable].[MarketSourceCode] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1"
+              refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination 1"
+              name="StagingTable"
               usesDispositions="true"
               version="4">
               <properties>
@@ -16796,7 +16796,7 @@ where [refTable].[MarketSourceCode] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Connections[OleDbConnection]"
+                  refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Connections[OleDbConnection]"
                   connectionManagerID="{9DE4DC1B-45A2-4C06-9A59-BEF0908476F2}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-9U0IJS6.STGQL]"
                   description="The OLE DB runtime connection used to access the database."
@@ -16804,1305 +16804,1305 @@ where [refTable].[MarketSourceCode] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MarketSourceName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[MarketSourceName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="MarketSourceName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MarketSourceName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[MarketSourceName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[MarketSourceName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ActualClosingDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_ActualClosingDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_ActualClosingDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ActualClosingDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ActualClosingDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_ActualClosingDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_AmortizationType]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_AmortizationType]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_AmortizationType"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_AmortizationType]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_AnnualPercentageRate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_AnnualPercentageRate]"
                       cachedDataType="numeric"
                       cachedName="DC_AnnualPercentageRate"
                       cachedPrecision="23"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_AnnualPercentageRate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ApplicationDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_ApplicationDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_ApplicationDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_ApplicationDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ApplicationReturnedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_ApplicationReturnedDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_ApplicationReturnedDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationReturnedDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationReturnedDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_ApplicationReturnedDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ApplicationStartedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_ApplicationStartedDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_ApplicationStartedDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationStartedDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationStartedDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_ApplicationStartedDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_AppraisedValue]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_AppraisedValue]"
                       cachedDataType="numeric"
                       cachedName="DC_AppraisedValue"
                       cachedPrecision="23"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AppraisedValue]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[AppraisedValue]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_AppraisedValue]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ApprovalDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_ApprovalDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_ApprovalDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_ApprovalDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ApprovalStatus]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_ApprovalStatus]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_ApprovalStatus"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalStatus]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalStatus]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_ApprovalStatus]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrAddress]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_BorrAddress]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="159"
                       cachedName="DC_BorrAddress"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrAddress]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrAddress]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_BorrAddress]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrBirthDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_BorrBirthDate]"
                       cachedDataType="dbDate"
                       cachedName="DC_BorrBirthDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_BorrBirthDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrCity]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_BorrCity]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_BorrCity"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrCity]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrCity]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_BorrCity]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrEmailAddress]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_BorrEmailAddress]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="DC_BorrEmailAddress"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrEmailAddress]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrEmailAddress]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_BorrEmailAddress]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrFirstName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_BorrFirstName]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="DC_BorrFirstName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrFirstName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrFirstName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_BorrFirstName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrGender]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_BorrGender]"
                       cachedDataType="wstr"
                       cachedLength="1"
                       cachedName="DC_BorrGender"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrGender]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrGender]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_BorrGender]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrLastName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_BorrLastName]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="DC_BorrLastName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrLastName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrLastName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_BorrLastName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrNoYearsOnJob]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_BorrNoYearsOnJob]"
                       cachedDataType="numeric"
                       cachedName="DC_BorrNoYearsOnJob"
                       cachedPrecision="24"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrNoYearsOnJob]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrNoYearsOnJob]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_BorrNoYearsOnJob]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrState]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_BorrState]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_BorrState"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrState]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrState]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_BorrState]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrTotalIncome]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_BorrTotalIncome]"
                       cachedDataType="numeric"
                       cachedName="DC_BorrTotalIncome"
                       cachedPrecision="26"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrTotalIncome]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrTotalIncome]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_BorrTotalIncome]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrZip]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_BorrZip]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_BorrZip"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrZip]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrZip]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_BorrZip]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BottomQualificationRatios]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_BottomQualificationRatios]"
                       cachedDataType="numeric"
                       cachedName="DC_BottomQualificationRatios"
                       cachedPrecision="23"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BottomQualificationRatios]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BottomQualificationRatios]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_BottomQualificationRatios]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_Channel]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_Channel]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="DC_Channel"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_Channel]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CloserFirstName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_CloserFirstName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_CloserFirstName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CloserFirstName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CloserFirstName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_CloserFirstName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_Closer_Name]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_Closer_Name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_Closer_Name"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_Closer_Name]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CloserLastName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_CloserLastName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_CloserLastName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CloserLastName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CloserLastName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_CloserLastName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ClosingDisclosureRecievedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_ClosingDisclosureRecievedDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_ClosingDisclosureRecievedDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ClosingDisclosureRecievedDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ClosingDisclosureRecievedDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_ClosingDisclosureRecievedDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CombinedLoanToValueRatio]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_CombinedLoanToValueRatio]"
                       cachedDataType="numeric"
                       cachedName="DC_CombinedLoanToValueRatio"
                       cachedPrecision="23"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CombinedLoanToValueRatio]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CombinedLoanToValueRatio]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_CombinedLoanToValueRatio]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ConditionalApprovalDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_ConditionalApprovalDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_ConditionalApprovalDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ConditionalApprovalDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ConditionalApprovalDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_ConditionalApprovalDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ConditionsReceivedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_ConditionsReceivedDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_ConditionsReceivedDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ConditionsReceivedDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ConditionsReceivedDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_ConditionsReceivedDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CreditPullDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_CreditPullDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_CreditPullDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CreditPullDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CreditPullDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_CreditPullDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CurrentMilestone]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_CurrentMilestone]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_CurrentMilestone"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestone]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestone]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_CurrentMilestone]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CurrentMilestoneTrackingDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_CurrentMilestoneTrackingDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_CurrentMilestoneTrackingDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestoneTrackingDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestoneTrackingDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_CurrentMilestoneTrackingDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_DenialDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_DenialDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_DenialDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DenialDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DenialDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_DenialDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_DisbursementDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_DisbursementDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_DisbursementDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DisbursementDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DisbursementDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_DisbursementDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_DocumentPreparedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_DocumentPreparedDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_DocumentPreparedDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentPreparedDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DocumentPreparedDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_DocumentPreparedDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_DocumentResubmittedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_DocumentResubmittedDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_DocumentResubmittedDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentResubmittedDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DocumentResubmittedDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_DocumentResubmittedDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_DocumentReviewedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_DocumentReviewedDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_DocumentReviewedDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentReviewedDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DocumentReviewedDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_DocumentReviewedDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_DocumentShippingDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_DocumentShippingDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_DocumentShippingDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentShippingDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DocumentShippingDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_DocumentShippingDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_DocumentSigningDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_DocumentSigningDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_DocumentSigningDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSigningDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSigningDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_DocumentSigningDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_DocumentSubmittalDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_DocumentSubmittalDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_DocumentSubmittalDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSubmittalDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSubmittalDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_DocumentSubmittalDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_EstimatedLoanClosingDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_EstimatedLoanClosingDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_EstimatedLoanClosingDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EstimatedLoanClosingDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[EstimatedLoanClosingDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_EstimatedLoanClosingDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_FinalDocumentDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_FinalDocumentDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_FinalDocumentDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FinalDocumentDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[FinalDocumentDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_FinalDocumentDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_FundedTier]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_FundedTier]"
                       cachedDataType="i4"
                       cachedName="DC_FundedTier"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_FundedTier]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_FinallCreditScore]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_FinallCreditScore]"
                       cachedDataType="numeric"
                       cachedName="DC_FinallCreditScore"
                       cachedPrecision="24"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_FinallCreditScore]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_FundedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_FundedDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_FundedDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FundedDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[FundedDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_FundedDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_HouseOnSaleState]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_HouseOnSaleState]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_HouseOnSaleState"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleState]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleState]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_HouseOnSaleState]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_HouseOnSaleStreet]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_HouseOnSaleStreet]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="159"
                       cachedName="DC_HouseOnSaleStreet"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleStreet]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleStreet]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_HouseOnSaleStreet]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_HouseOnSaleZip]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_HouseOnSaleZip]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_HouseOnSaleZip"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleZip]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleZip]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_HouseOnSaleZip]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_InitialClosingDisclosureSentDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_InitialClosingDisclosureSentDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_InitialClosingDisclosureSentDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialClosingDisclosureSentDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[InitialClosingDisclosureSentDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_InitialClosingDisclosureSentDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_InitialDisclosureProvidedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_InitialDisclosureProvidedDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_InitialDisclosureProvidedDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialDisclosureProvidedDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[InitialDisclosureProvidedDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_InitialDisclosureProvidedDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_InitialLoanEstimateDueDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_InitialLoanEstimateDueDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_InitialLoanEstimateDueDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateDueDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateDueDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_InitialLoanEstimateDueDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_InitialLoanEstimateSentDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_InitialLoanEstimateSentDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_InitialLoanEstimateSentDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateSentDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateSentDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_InitialLoanEstimateSentDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_InterestRate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_InterestRate]"
                       cachedDataType="numeric"
                       cachedName="DC_InterestRate"
                       cachedPrecision="23"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InterestRate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[InterestRate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_InterestRate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_IntialLoanAmount]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_IntialLoanAmount]"
                       cachedDataType="numeric"
                       cachedName="DC_IntialLoanAmount"
                       cachedPrecision="23"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IntialLoanAmount]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[IntialLoanAmount]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_IntialLoanAmount]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_IsBorrSelfEmployeedFlag]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_IsBorrSelfEmployeedFlag]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_IsBorrSelfEmployeedFlag"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IsBorrSelfEmployeedFlag]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[IsBorrSelfEmployeedFlag]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_IsBorrSelfEmployeedFlag]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_IsConstructionLoan]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_IsConstructionLoan]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_IsConstructionLoan"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IsConstructionLoan]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[IsConstructionLoan]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_IsConstructionLoan]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LastLoadDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LastLoadDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_LastLoadDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LastLoadDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LastLoadDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LastLoadDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LastModifiedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LastModifiedDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_LastModifiedDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LastModifiedDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LastModifiedDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LastModifiedDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LeadDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LeadDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_LeadDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LeadDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LeadDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LeadId]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LeadId]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="132"
                       cachedName="DC_LeadId"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadId]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LeadId]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LeadId]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LeadSource]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LeadSource]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="DC_LeadSource"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LeadSource]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LeadSourceType]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LeadSourceType]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="DC_LeadSourceType"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadSourceType]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LeadSourceType]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LeadSourceType]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoadBy]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoadBy]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_LoadBy"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoadBy]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoadBy]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoadBy]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoadDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoadDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_LoadDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoadDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoadDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoadDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanExpirationDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanExpirationDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_LoanExpirationDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanExpirationDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanExpirationDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanExpirationDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanID]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="72"
                       cachedName="DC_LoanID"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanID]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanID]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanID]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanInformationDocumentDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanInformationDocumentDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_LoanInformationDocumentDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanInformationDocumentDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanInformationDocumentDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanInformationDocumentDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficerEmail]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficerEmail]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="DC_LoanOfficerEmail"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerEmail]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerEmail]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanOfficerEmail]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficerFirstName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficerFirstName]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="DC_LoanOfficerFirstName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFirstName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFirstName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanOfficerFirstName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficer]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficer]"
                       cachedDataType="wstr"
                       cachedLength="101"
                       cachedName="DC_LoanOfficer"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanOfficer]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficerLastName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficerLastName]"
                       cachedDataType="wstr"
                       cachedLength="100"
                       cachedName="DC_LoanOfficerLastName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanOfficerLastName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanProgram]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanProgram]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_LoanProgram"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanProgram]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanProgram]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanProgram]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanPurpose]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanPurpose]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_LoanPurpose"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanPurpose]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanPurpose]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanPurpose]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanSetupDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanSetupDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_LoanSetupDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanSetupDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanSetupDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanSetupDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanStatus]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanStatus]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_LoanStatus"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatus]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatus]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanStatus]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanStatusActionDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanStatusActionDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_LoanStatusActionDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatusActionDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatusActionDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanStatusActionDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanTerm]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanTerm]"
                       cachedDataType="numeric"
                       cachedName="DC_LoanTerm"
                       cachedPrecision="23"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanTerm]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanTerm]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanTerm]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanToValueRatio]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanToValueRatio]"
                       cachedDataType="numeric"
                       cachedName="DC_LoanToValueRatio"
                       cachedPrecision="23"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanToValueRatio]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanToValueRatio]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanToValueRatio]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanType]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LoanType]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_LoanType"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanType]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanType]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LoanType]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LockDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LockDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_LockDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LockDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LockDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LockDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LockExpireDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_LockExpireDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_LockExpireDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LockExpireDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LockExpireDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_LockExpireDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_MarketSource]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_MarketSource]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="7"
                       cachedName="DC_MarketSource"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MarketSource]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[MarketSource]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_MarketSource]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_MilestoneStatus]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_MilestoneStatus]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_MilestoneStatus"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MilestoneStatus]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[MilestoneStatus]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_MilestoneStatus]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_MortgageInsuranceCompany]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_MortgageInsuranceCompany]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_MortgageInsuranceCompany"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_MortgageInsuranceCompany]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_Net_Buy_Price]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_Net_Buy_Price]"
                       cachedDataType="numeric"
                       cachedName="DC_Net_Buy_Price"
                       cachedPrecision="23"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Net_Buy_Price]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[Net_Buy_Price]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_Net_Buy_Price]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_OfficeID]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_OfficeID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="DC_OfficeID"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[OfficeID]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[OfficeID]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_OfficeID]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_OriginationFee]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_OriginationFee]"
                       cachedDataType="numeric"
                       cachedName="DC_OriginationFee"
                       cachedPrecision="27"
                       cachedScale="13"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[OriginationFee]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[OriginationFee]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_OriginationFee]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ProcessingDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_ProcessingDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_ProcessingDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProcessingDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ProcessingDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_ProcessingDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ProcessorFirstName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_ProcessorFirstName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_ProcessorFirstName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_ProcessorFirstName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_Loan_Processor_Name]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_Loan_Processor_Name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_Loan_Processor_Name"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_Loan_Processor_Name]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ProcessorLastName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_ProcessorLastName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_ProcessorLastName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_ProcessorLastName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_PropertyOccupancyType]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_PropertyOccupancyType]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_PropertyOccupancyType"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PropertyOccupancyType]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[PropertyOccupancyType]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_PropertyOccupancyType]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_QAFailDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_QAFailDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_QAFailDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[QAFailDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[QAFailDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_QAFailDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_QAStatus]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_QAStatus]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_QAStatus"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[QAStatus]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[QAStatus]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_QAStatus]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_SourceName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_SourceName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_SourceName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_SourceName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_TopQualificationRatios]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_TopQualificationRatios]"
                       cachedDataType="numeric"
                       cachedName="DC_TopQualificationRatios"
                       cachedPrecision="23"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TopQualificationRatios]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[TopQualificationRatios]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_TopQualificationRatios]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_TotalFees]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_TotalFees]"
                       cachedDataType="numeric"
                       cachedName="DC_TotalFees"
                       cachedPrecision="27"
                       cachedScale="13"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalFees]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[TotalFees]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_TotalFees]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_TotalLoanAmt]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_TotalLoanAmt]"
                       cachedDataType="numeric"
                       cachedName="DC_TotalLoanAmt"
                       cachedPrecision="23"
                       cachedScale="10"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_TotalLoanAmt]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterFirstName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterFirstName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_UnderwriterFirstName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFirstName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFirstName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_UnderwriterFirstName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_Underwriter_Name]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_Underwriter_Name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_Underwriter_Name"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_Underwriter_Name]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterLastName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterLastName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_UnderwriterLastName"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_UnderwriterLastName]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterRiskAssess]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterRiskAssess]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_UnderwriterRiskAssess"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterRiskAssess]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterRiskAssess]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_UnderwriterRiskAssess]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_UnderwritingReceivedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_UnderwritingReceivedDate]"
                       cachedDataType="dbTimeStamp"
                       cachedName="DC_UnderwritingReceivedDate"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwritingReceivedDate]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[UnderwritingReceivedDate]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_UnderwritingReceivedDate]" />
                     <inputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_Insurance_Company]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].Columns[DC_Insurance_Company]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
                       cachedName="DC_Insurance_Company"
-                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                      externalMetadataColumnId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
                       lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[DC_Insurance_Company]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ActualClosingDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ActualClosingDate]"
                       dataType="dbTimeStamp"
                       name="ActualClosingDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="AmortizationType" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
                       dataType="numeric"
                       name="AnnualPercentageRate"
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationDate]"
                       dataType="dbTimeStamp"
                       name="ApplicationDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationReturnedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationReturnedDate]"
                       dataType="dbTimeStamp"
                       name="ApplicationReturnedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationStartedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationStartedDate]"
                       dataType="dbTimeStamp"
                       name="ApplicationStartedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AppraisedValue]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[AppraisedValue]"
                       dataType="numeric"
                       name="AppraisedValue"
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalDate]"
                       dataType="dbTimeStamp"
                       name="ApprovalDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalStatus]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalStatus]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="ApprovalStatus" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrAddress]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrAddress]"
                       codePage="1252"
                       dataType="str"
                       length="159"
                       name="BorrAddress" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
                       dataType="dbDate"
                       name="BorrBirthDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrCity]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrCity]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="BorrCity" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrEmailAddress]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrEmailAddress]"
                       dataType="wstr"
                       length="100"
                       name="BorrEmailAddress" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrFirstName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrFirstName]"
                       dataType="wstr"
                       length="50"
                       name="BorrFirstName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrGender]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrGender]"
                       dataType="wstr"
                       length="1"
                       name="BorrGender" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrLastName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrLastName]"
                       dataType="wstr"
                       length="50"
                       name="BorrLastName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrNoYearsOnJob]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrNoYearsOnJob]"
                       dataType="numeric"
                       name="BorrNoYearsOnJob"
                       precision="24"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrState]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrState]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="BorrState" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrTotalIncome]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrTotalIncome]"
                       dataType="numeric"
                       name="BorrTotalIncome"
                       precision="26"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrZip]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BorrZip]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="BorrZip" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BottomQualificationRatios]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[BottomQualificationRatios]"
                       dataType="numeric"
                       name="BottomQualificationRatios"
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[Channel]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="Channel" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CloserFirstName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CloserFirstName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="CloserFirstName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CloserFullName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="CloserFullName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CloserLastName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CloserLastName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="CloserLastName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ClosingDisclosureRecievedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ClosingDisclosureRecievedDate]"
                       dataType="dbTimeStamp"
                       name="ClosingDisclosureRecievedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CombinedLoanToValueRatio]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CombinedLoanToValueRatio]"
                       dataType="numeric"
                       name="CombinedLoanToValueRatio"
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ConditionalApprovalDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ConditionalApprovalDate]"
                       dataType="dbTimeStamp"
                       name="ConditionalApprovalDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ConditionsReceivedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ConditionsReceivedDate]"
                       dataType="dbTimeStamp"
                       name="ConditionsReceivedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CreditPullDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CreditPullDate]"
                       dataType="dbTimeStamp"
                       name="CreditPullDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestone]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestone]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="CurrentMilestone" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestoneTrackingDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestoneTrackingDate]"
                       dataType="dbTimeStamp"
                       name="CurrentMilestoneTrackingDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DenialDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DenialDate]"
                       dataType="dbTimeStamp"
                       name="DenialDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DisbursementDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DisbursementDate]"
                       dataType="dbTimeStamp"
                       name="DisbursementDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentPreparedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DocumentPreparedDate]"
                       dataType="dbTimeStamp"
                       name="DocumentPreparedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentResubmittedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DocumentResubmittedDate]"
                       dataType="dbTimeStamp"
                       name="DocumentResubmittedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentReviewedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DocumentReviewedDate]"
                       dataType="dbTimeStamp"
                       name="DocumentReviewedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentShippingDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DocumentShippingDate]"
                       dataType="dbTimeStamp"
                       name="DocumentShippingDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSigningDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSigningDate]"
                       dataType="dbTimeStamp"
                       name="DocumentSigningDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSubmittalDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSubmittalDate]"
                       dataType="dbTimeStamp"
                       name="DocumentSubmittalDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EstimatedLoanClosingDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[EstimatedLoanClosingDate]"
                       dataType="dbTimeStamp"
                       name="EstimatedLoanClosingDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FinalDocumentDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[FinalDocumentDate]"
                       dataType="dbTimeStamp"
                       name="FinalDocumentDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
                       dataType="i4"
                       name="FundedTier" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
                       dataType="numeric"
                       name="FinallCreditScore"
                       precision="24"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FundedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[FundedDate]"
                       dataType="dbTimeStamp"
                       name="FundedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleState]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleState]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="HouseOnSaleState" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleStreet]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleStreet]"
                       codePage="1252"
                       dataType="str"
                       length="159"
                       name="HouseOnSaleStreet" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleZip]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleZip]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="HouseOnSaleZip" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialClosingDisclosureSentDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[InitialClosingDisclosureSentDate]"
                       dataType="dbTimeStamp"
                       name="InitialClosingDisclosureSentDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialDisclosureProvidedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[InitialDisclosureProvidedDate]"
                       dataType="dbTimeStamp"
                       name="InitialDisclosureProvidedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateDueDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateDueDate]"
                       dataType="dbTimeStamp"
                       name="InitialLoanEstimateDueDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateSentDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateSentDate]"
                       dataType="dbTimeStamp"
                       name="InitialLoanEstimateSentDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InterestRate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[InterestRate]"
                       dataType="numeric"
                       name="InterestRate"
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IntialLoanAmount]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[IntialLoanAmount]"
                       dataType="numeric"
                       name="IntialLoanAmount"
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IsBorrSelfEmployeedFlag]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[IsBorrSelfEmployeedFlag]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="IsBorrSelfEmployeedFlag" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IsConstructionLoan]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[IsConstructionLoan]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="IsConstructionLoan" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LastLoadDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LastLoadDate]"
                       dataType="dbTimeStamp"
                       name="LastLoadDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LastModifiedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LastModifiedDate]"
                       dataType="dbTimeStamp"
                       name="LastModifiedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LeadDate]"
                       dataType="dbTimeStamp"
                       name="LeadDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadId]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LeadId]"
                       codePage="1252"
                       dataType="str"
                       length="132"
                       name="LeadId" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
                       codePage="1252"
                       dataType="str"
                       length="255"
                       name="LeadSource" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadSourceType]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LeadSourceType]"
                       codePage="1252"
                       dataType="str"
                       length="255"
                       name="LeadSourceType" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoadBy]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoadBy]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="LoadBy" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoadDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoadDate]"
                       dataType="dbTimeStamp"
                       name="LoadDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanExpirationDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanExpirationDate]"
                       dataType="dbTimeStamp"
                       name="LoanExpirationDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanID]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanID]"
                       codePage="1252"
                       dataType="str"
                       length="72"
                       name="LoanID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanInformationDocumentDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanInformationDocumentDate]"
                       dataType="dbTimeStamp"
                       name="LoanInformationDocumentDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerEmail]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerEmail]"
                       dataType="wstr"
                       length="100"
                       name="LoanOfficerEmail" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFirstName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFirstName]"
                       dataType="wstr"
                       length="100"
                       name="LoanOfficerFirstName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerFullName]"
                       dataType="wstr"
                       length="101"
                       name="LoanOfficerFullName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerLastName]"
                       dataType="wstr"
                       length="100"
                       name="LoanOfficerLastName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanProgram]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanProgram]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="LoanProgram" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanPurpose]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanPurpose]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="LoanPurpose" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanSetupDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanSetupDate]"
                       dataType="dbTimeStamp"
                       name="LoanSetupDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatus]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatus]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="LoanStatus" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatusActionDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatusActionDate]"
                       dataType="dbTimeStamp"
                       name="LoanStatusActionDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanTerm]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanTerm]"
                       dataType="numeric"
                       name="LoanTerm"
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanToValueRatio]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanToValueRatio]"
                       dataType="numeric"
                       name="LoanToValueRatio"
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanType]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LoanType]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="LoanType" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LockDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LockDate]"
                       dataType="dbTimeStamp"
                       name="LockDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LockExpireDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[LockExpireDate]"
                       dataType="dbTimeStamp"
                       name="LockExpireDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MarketSource]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[MarketSource]"
                       codePage="1252"
                       dataType="str"
                       length="7"
                       name="MarketSource" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MilestoneStatus]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[MilestoneStatus]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="MilestoneStatus" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="MortgageInsuranceCompany" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Net_Buy_Price]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[Net_Buy_Price]"
                       dataType="numeric"
                       name="Net_Buy_Price"
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[OfficeID]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[OfficeID]"
                       codePage="1252"
                       dataType="str"
                       length="100"
                       name="OfficeID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[OriginationFee]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[OriginationFee]"
                       dataType="numeric"
                       name="OriginationFee"
                       precision="27"
                       scale="13" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProcessingDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ProcessingDate]"
                       dataType="dbTimeStamp"
                       name="ProcessingDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFirstName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="ProcessorFirstName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorFullName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="ProcessorFullName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[ProcessorLastName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="ProcessorLastName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PropertyOccupancyType]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[PropertyOccupancyType]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="PropertyOccupancyType" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[QAFailDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[QAFailDate]"
                       dataType="dbTimeStamp"
                       name="QAFailDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[QAStatus]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[QAStatus]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="QAStatus" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="SourceName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TopQualificationRatios]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[TopQualificationRatios]"
                       dataType="numeric"
                       name="TopQualificationRatios"
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalFees]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[TotalFees]"
                       dataType="numeric"
                       name="TotalFees"
                       precision="27"
                       scale="13" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
                       dataType="numeric"
                       name="TotalLoanAmt"
                       precision="23"
                       scale="10" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFirstName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFirstName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="UnderwriterFirstName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterFullName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="UnderwriterFullName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterLastName]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="UnderwriterLastName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterRiskAssess]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterRiskAssess]"
                       codePage="1252"
                       dataType="str"
                       length="128"
                       name="UnderwriterRiskAssess" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwritingReceivedDate]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[UnderwritingReceivedDate]"
                       dataType="dbTimeStamp"
                       name="UnderwritingReceivedDate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MarketSourceName]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[MarketSourceName]"
                       codePage="1252"
                       dataType="str"
                       length="100"
                       name="MarketSourceName" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input].ExternalColumns[Insurance_Company]"
                       codePage="1252"
                       dataType="str"
                       length="128"
@@ -18112,22 +18112,22 @@ where [refTable].[MarketSourceCode] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -18159,7 +18159,7 @@ where [refTable].[MarketSourceCode] = ?</property>
               startId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Derived Column_ReplaceNullwithDunatek1.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL.Paths[Fuzzy Lookup Output]"
-              endId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+              endId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable.Inputs[OLE DB Destination Input]"
               name="Fuzzy Lookup Output"
               startId="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\Fuzzy Lookup.Outputs[Fuzzy Lookup Output]" />
             <path
@@ -19579,8 +19579,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="181.333333333334,42.6666666666667"
-          Id="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1"
+          Size="141.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable"
           TopLeft="661,501.333333333333" />
         <EdgeLayout
           Id="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL.Paths[Fuzzy Lookup Output]"
@@ -19588,9 +19588,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="167.666666666667,29.6666666666667"
+              EndConnector="147.666666666667,29.6666666666667"
               Start="0,0"
-              End="167.666666666667,22.1666666666667">
+              End="147.666666666667,22.1666666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -19601,13 +19601,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     Point2="0,14.8333333333333"
                     Point3="4,14.8333333333333" />
                   <mssgle:LineSegment
-                    End="163.666666666667,14.8333333333333" />
+                    End="143.666666666667,14.8333333333333" />
                   <mssgle:CubicBezierSegment
-                    Point1="163.666666666667,14.8333333333333"
-                    Point2="167.666666666667,14.8333333333333"
-                    Point3="167.666666666667,18.8333333333333" />
+                    Point1="143.666666666667,14.8333333333333"
+                    Point2="147.666666666667,14.8333333333333"
+                    Point3="147.666666666667,18.8333333333333" />
                   <mssgle:LineSegment
-                    End="167.666666666667,22.1666666666667" />
+                    End="147.666666666667,22.1666666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19664,7 +19664,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\OLE DB Destination 1">
+    design-time-name="Package\Data Flow Task_QuickenLoan_UberWriter_MSSQL\StagingTable">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
