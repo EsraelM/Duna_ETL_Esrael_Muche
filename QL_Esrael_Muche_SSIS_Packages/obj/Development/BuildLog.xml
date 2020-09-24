@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Esrael_Muche_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-19T22:07:35.1242788Z</LastWriteTime>
+    <LastWriteTime>2020-09-24T03:07:38.9743971Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -28,7 +28,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Esrael_Muche_LendingPad.dtsx</Name>
-      <LastWriteTime>2020-09-21T03:02:52.7664028Z</LastWriteTime>
+      <LastWriteTime>2020-09-24T03:06:58.2118126Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Pkg_Esrael_Muche_SimpleNexus.dtsx</Name>
+      <LastWriteTime>2020-09-24T02:58:08.4424397Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
